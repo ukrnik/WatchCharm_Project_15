@@ -9,6 +9,8 @@ main {
   flex-grow: 1;
 }
 
+/* -----------------------------------container ------------------------------------------- */
+
 .container {
   width: auto;
   padding: 0 20px;
@@ -32,5 +34,44 @@ main {
   .container {
     max-width: 1150px;
     padding: 0 65px;
+  }
+}
+
+/* ----------------------------social-media-icons------------------------------------------- */
+
+.social-media-list {
+  display: flex;
+  gap: 10px;
+}
+
+.social-media-item {
+  width: 34px;
+  height: 34px;
+}
+
+.social-media-link {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  border: 1px solid rgba(251, 251, 251, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-media-link:hover .social-media-icon,
+.social-media-link:focus .social-media-icon {
+  fill: #fbfbfb;
+}
+
+.social-media-icon {
+  fill: #cbcbcb;
+}
+
+@media screen and (min-width: 768px) {
+  .social-media-item {
+    width: 36px;
+    height: 36px;
   }
 }
