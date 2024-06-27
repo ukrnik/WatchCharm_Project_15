@@ -1,3 +1,124 @@
 .sale {
-  background-color: rgb(24, 183, 74);
+  box-sizing: border-box;
+margin-bottom: 60px;
+}
+
+.sale-title {
+  font-family: "Gilroy", sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 32px; 
+    letter-spacing: -0.02em;
+    color: #0c0c0c;
+    margin-bottom: 24px;
+
+}
+.sale-list {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+.sale-item {
+ max-width: 80px;
+  max-height: 80px;
+  border: 1px solid rgba(12, 12, 12, 0.05);
+  border-radius: 16px;
+  background-color: #f3f3f3;
+}
+
+.image-sale-item {
+  border-radius: 16px;
+}
+
+.image-sale {
+  border: 1px solid rgba(12, 12, 12, 0.05);
+  border-radius: 30px;
+  background-color: #f3f3f3;
+  margin-bottom: 20px;
+  
+}
+
+.discription-sale {
+  max-width: 335px;
+  border-radius: 30px;
+  background-color: #3350e9;
+  padding: 48px 28px;
+  
+}
+.discription-sale-title {
+  max-width: 279px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px; 
+    line-height: 1.17;
+    letter-spacing: -0.02em;
+    color: #fbfbfb;
+    margin-bottom: 10px;
+}
+.sale-product-tag {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px; 
+    line-height: 1.3;
+    letter-spacing: -0.02em;
+    color: rgba(251, 251, 251, 0.5);
+   margin-bottom: 20px;
+}
+
+.sale-price {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px; 
+  line-height: 1.17;
+  letter-spacing: -0.02em;
+text-decoration: line-through;
+  color: rgba(251, 251, 251, 0.5);
+  margin-bottom: 28px;
+
+ 
+}
+
+.sale-discount {
+  border-radius: 8px;
+    width: 68px;
+    height: 32px;
+    background-color: rgba(251, 251, 251, 0.1);
+    padding: 8px 12px;
+       font-weight: 600;
+      font-size: 16px;
+      line-height: 20px; 
+      line-height: 1.25;
+      letter-spacing: -0.02em;
+      color: #fbfbfb;
+      margin-right: 9px;
+  
+}
+
+.sale-text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px; 
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    color: rgba(251, 251, 251, 0.7);
+    margin-bottom: 28px;
+    max-width: 279px;
+}
+.list-advantages-sale {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 4px;
+}
+
+.advantages-item-sale {
+  padding: 8px 12px;
+  border: 1px solid rgba(251, 251, 251, 0.2);
+    border-radius: 8px;
+    font-family: "Gilroy", sans-serif;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 16px; 
+      line-height: 1.3;
+      color: #fbfbfb;
 }
