@@ -1,3 +1,39 @@
+
 .about-us {
   background-color: aqua;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.container{
+    width: auto;
+    padding: 0 20px;
+    margin: 0 auto;
+    max-width: 335px;
+    border-radius: 30px;
+    background-color: #f3f3f3;
+}
+
+
+
+
+
+
+
+
+.catalog-btn{
+  height: 48px;
+  width: 160px;
+  border-radius: 16px;
+  background-color: #3350E9;
+  line-height: 18px; 
+  line-height: 1.28571;
+  text-align: center;
+  color: #fbfbfb;
+  font-size: 14px;
+
+
 }
