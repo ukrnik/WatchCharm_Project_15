@@ -1,7 +1,7 @@
 .footer {
   background: #0c0c0c;
   border-radius: 30px;
-  margin: 60px 20px 20px;
+  margin: 0 20px 20px;
 }
 
 .footer-links-wrapper {
@@ -60,7 +60,7 @@
 .footer-menu-wrapper {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 48px;
+  margin-bottom: 24px;
 }
 
 .footer-menu {
@@ -107,6 +107,14 @@
   color: #fbfbfb;
 }
 
+.footer-divider {
+  display: block;
+  height: 1px;
+  width: 100%;
+  background-color: rgba(251, 251, 251, 0.1);
+  margin-bottom: 24px;
+}
+
 .rights,
 .legalities {
   font-weight: 500;
@@ -130,7 +138,7 @@
 
 @media screen and (min-width: 768px) {
   .footer {
-    margin-top: 100px;
+    margin: 0 32px 32px;
   }
 
   .footer-links-wrapper {
@@ -138,10 +146,11 @@
     flex-wrap: wrap;
     column-gap: 336px;
     row-gap: 86px;
-    justify-content: center;
+    justify-content: space-between;
   }
 
   .footer-title {
+    margin: 0 auto;
     min-width: 524px;
     font-size: 28px;
     line-height: 1.14;
@@ -184,10 +193,6 @@
   }
 
   .footer-divider {
-    display: block;
-    height: 1px;
-    width: 100%;
-    background-color: rgba(251, 251, 251, 0.1);
     margin-bottom: 28px;
   }
 }
@@ -195,10 +200,6 @@
 /* ==================================DESKTOP=================================  */
 
 @media screen and (min-width: 1280px) {
-  .container {
-    max-width: 1216px;
-  }
-
   .footer-links-wrapper {
     column-gap: 0px;
     justify-content: space-between;
