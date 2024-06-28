@@ -74,17 +74,16 @@ margin-bottom: 60px;
   letter-spacing: -0.02em;
 text-decoration: line-through;
   color: rgba(251, 251, 251, 0.5);
-  margin-bottom: 28px;
+  
 
  
 }
 
 .sale-discount {
   border-radius: 8px;
-    width: 68px;
-    height: 32px;
-    background-color: rgba(251, 251, 251, 0.1);
-    padding: 8px 12px;
+   min-width: 68px;
+      background-color: rgba(251, 251, 251, 0.1);
+      padding: 8px 12px;
        font-weight: 600;
       font-size: 16px;
       line-height: 20px; 
@@ -92,7 +91,11 @@ text-decoration: line-through;
       letter-spacing: -0.02em;
       color: #fbfbfb;
       margin-right: 9px;
-  
+ 
+}
+.sale-text-price {
+  display: flex;
+ align-items: center;
 }
 
 .sale-text {
@@ -104,6 +107,7 @@ text-decoration: line-through;
     color: rgba(251, 251, 251, 0.7);
     margin-bottom: 28px;
     max-width: 279px;
+    margin-top: 28px;
 }
 .list-advantages-sale {
   display: flex;
