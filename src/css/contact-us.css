@@ -1,3 +1,22 @@
 .contact-us {
-  background-color: rgb(53, 121, 181);
+  background-color: #fff;
+}
+
+.section-block {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+.forms {
+  max-width: 580px;
+  max-height: 556px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 50px 60px;
+  gap: 32px;
+  background-color: #f3f3f3;
+  border-radius: 50px;
 }

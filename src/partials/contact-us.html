@@ -1,5 +1,35 @@
 <section class="contact-us">
   <div class="container">
-    <p>contact-us</p>
+    <h2>Contact Us</h2>
+    <div class="section-block">
+    <div class="forms">
+    <p>Please use the form below to contact us. Enter your name, email, phone, and message and we'll get back to you shortly.</p>
+    <input type="text" name="user-name" id="user-name" placeholder="Name" class="section-input">
+    <input type="email" name="user-email" id="user-email" placeholder="Email" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" class="section-input">
+    <input type="tel" name="user-tel" id="user-tel" placeholder="+380" pattern="^\+\d{3}-\d{2}-\d{3}-\d{2}-\d{2}$" class="section-input">
+    <textarea name="user-comment" id="user-comment" placeholder="Comment" class="section-textarea"></textarea>
+    <button type="submit" class="send-btn">Send</button>
+    </div>
+    <div class="section-picture">
+    <picture>
+      <source
+      srcset="../img/contact_us-dt.jpg 1x, ../img/contact_us-dt2x.jpg" 2x
+      media="(min-width: 1280px)"
+      >
+      <source
+      srcset="../img/contact_us-tab.jpg 1x, ../img/contact_us-tab2x.jpg" 2x
+      media="(min-width: 768px)"
+      >
+      <source
+      srcset="../img/contact_us-mob.jpg 1x, ../img/contact_us-mob2x.jpg" 2x
+      media="(min-width: 375px)"
+      >
+      <img src="../img/contact_us-dt.jpg" 
+      alt="Rectangle"
+      width="530"
+      height="556"
+      />
+    </picture>
   </div>
+</div>
 </section>
