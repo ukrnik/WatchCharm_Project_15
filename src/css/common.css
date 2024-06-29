@@ -9,12 +9,25 @@ main {
   flex-grow: 1;
 }
 
-/* -----------------------------------container ------------------------------------------- */
+/* -----------------------------------container section section-title ------------------------------------------- */
 
 .container {
   width: auto;
   padding: 0 20px;
   margin: 0 auto;
+}
+
+.section {
+  padding-top: 60px;
+}
+
+.section-title {
+  margin-bottom: 24px;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: #0c0c0c;
 }
 
 @media screen and (min-width: 375px) {
@@ -28,12 +41,25 @@ main {
     max-width: 704px;
     padding: 0 32px;
   }
+
+  .section {
+    padding-top: 80px;
+  }
+
+  .section-title {
+    font-size: 48px;
+    line-height: 0.91667;
+  }
 }
 
 @media screen and (min-width: 1280px) {
   .container {
     max-width: 1150px;
     padding: 0 65px;
+  }
+
+  .section {
+    padding-top: 100px;
   }
 }
 
