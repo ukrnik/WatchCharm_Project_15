@@ -25,6 +25,9 @@
 }
 
 .btn-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 152px;
   height: 44px;
   font-size: 12px;
