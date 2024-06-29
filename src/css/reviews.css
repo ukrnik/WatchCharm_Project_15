@@ -73,7 +73,6 @@
   }
 
   .reviews-list li:nth-child(2) {
-    display: block;
     display: flex;
   }
 
@@ -99,7 +98,6 @@
   }
 
   .reviews-list li:nth-child(3) {
-    display: block;
     display: flex;
   }
 
