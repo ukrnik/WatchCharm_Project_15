@@ -17,20 +17,20 @@ main {
 
 @media screen and (min-width: 375px) {
   .container {
-    max-width: 335px;
+    max-width: 375px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 704px;
+    max-width: 768px;
     padding: 0 32px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .container {
-    max-width: 1150px;
+    max-width: 1280px;
     padding: 0 65px;
   }
 }
