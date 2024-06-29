@@ -17,18 +17,25 @@
   display: none;
 }
 
+.reviews-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
 .reviews-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   border-radius: 30px;
   padding: 32px 36px;
-  width: 335px;
-  height: 262px;
+  max-width: 335px;
   position: relative;
   background: #f3f3f3;
 }
 
 .image-reviews {
-  margin-left: 103px;
-  margin-right: 103px;
   border-radius: 100%;
   stroke-width: 2px;
   stroke: #fbfbfb;
@@ -65,18 +72,9 @@
     height: 272px;
   }
 
-  .image-reviews {
-    margin-left: 108px;
-    margin-right: 108px;
-  }
-
-  .reviews-list {
-    display: flex;
-    gap: 16px;
-  }
-
   .reviews-list li:nth-child(2) {
     display: block;
+    display: flex;
   }
 
   .reviews-card-title {
@@ -96,17 +94,13 @@
     padding-bottom: 100px;
   }
 
-  .image-reviews {
-    margin-left: 121px;
-    margin-right: 121px;
-  }
-
   .reviews-list {
     gap: 20px;
   }
 
   .reviews-list li:nth-child(3) {
     display: block;
+    display: flex;
   }
 
   .reviews-card {
