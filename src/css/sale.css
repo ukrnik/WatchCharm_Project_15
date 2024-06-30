@@ -1,17 +1,4 @@
-.sale {
-  box-sizing: border-box;
-}
 
-.sale-title {
-  /* font-family: "Gilroy", sans-serif;
-    font-weight: 600;
-    font-size: 32px;
-    line-height: 32px; 
-    letter-spacing: -0.02em;
-    color: #0c0c0c;
-    margin-bottom: 24px; */
-
-}
 .sale-list {
   display: flex;
   gap: 5px;
@@ -147,12 +134,7 @@ background-color: rgba(251, 251, 251, 0.1);
 @media screen and (min-width: 768px) {
 
 
-.sale-title {
-    /* font-size: 48px;
-    line-height: 44px; 
-    line-height: 0.92;
-    margin-bottom: 40px; */
- }
+
  .sale-box-image {
    display: flex;
    gap: 20px;
