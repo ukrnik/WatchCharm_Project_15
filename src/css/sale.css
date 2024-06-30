@@ -169,6 +169,7 @@ width: 100%;
 .discription-sale {
   width: 100%;
   padding: 60px;
+  border-radius: 50px;
 
 }
 .discription-sale-title {
@@ -177,6 +178,7 @@ width: 100%;
     line-height: 36px; 
     line-height: 1.13;
     letter-spacing: -0.02em;
+
 }
 .sale-discount {
     font-size: 20px;
@@ -238,7 +240,7 @@ gap: 0;
 .discription-sale {
   max-width: 530px;
 
-  border-radius: 50px;
+ 
   background-color: #3350e9;
   padding: 60px;
 
