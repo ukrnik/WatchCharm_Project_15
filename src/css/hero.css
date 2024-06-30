@@ -45,22 +45,14 @@
   display: flex;
 }
 
-.dt {
-  display: none;
-}
-
-.tab {
-  display: none;
-}
-
 .collage-item {
-  border-radius: 100%;
-  /* border: -2px solid #fbfbfb; */
   outline: 2px solid #fbfbfb;
   outline-offset: -2px;
   margin-right: -12px;
+}
 
-  background-size: contain;
+.collage-item img {
+  border-radius: 50%;
 }
 
 .hero-nonsense-link {
@@ -126,13 +118,6 @@
     line-height: 1;
   }
 
-  .mob {
-    display: none;
-  }
-  .tab {
-    display: flex;
-  }
-
   .hero-image {
     border-radius: 50px;
   }
@@ -163,13 +148,5 @@
 
   .collage-item:last-child {
     margin-right: 0;
-  }
-
-  .tab {
-    display: none;
-  }
-
-  .dt {
-    display: flex;
   }
 }
