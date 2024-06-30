@@ -13,8 +13,8 @@
 }
 
 @media (min-resolution: 192dpi) {
-  .promo {
-    background-image: url(/img/advertisement-mob2x.jpg);
+  .wrap-advertisement {
+    background-image: url(/img/advertisement/advertisement-mob2x.png);
   }
 }
 
