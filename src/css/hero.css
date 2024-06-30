@@ -46,6 +46,7 @@
 }
 
 .collage-item {
+  border-radius: 50%;
   outline: 2px solid #fbfbfb;
   outline-offset: -2px;
   margin-right: -12px;
