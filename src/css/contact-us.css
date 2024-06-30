@@ -20,7 +20,7 @@
   flex-direction: column;
   padding: 48px 28px;
   background-color: #f3f3f3;
-  border-radius: 50px;
+  border-radius: 30px;
 }
 
 .section-input {
@@ -96,6 +96,7 @@
 
   .forms {
     padding: 50px 122px;
+    border-radius: 50px;
   }
 
   .section-input {
