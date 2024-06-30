@@ -1,3 +1,94 @@
-.advertisement {
-  background-color: beige;
+.wrap-advertisement {
+  width: 100%;
+  background: #0c0c0c;
+  background-image: url(/img/advertisement/advertisement-mob.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 30px;
+  padding: 60px 28px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+}
+
+@media (min-resolution: 192dpi) {
+  .promo {
+    background-image: url(/img/advertisement-mob2x.jpg);
+  }
+}
+
+.advertisement-text {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 32px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: #fbfbfb;
+}
+
+.decoration-text-advertisiment {
+  color: rgba(251, 251, 251, 0.5);
+}
+
+.link-contact-us {
+  padding: 15px 43px;
+  border: 1px solid rgba(251, 251, 251, 0.15);
+  border-radius: 16px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  line-height: 1.29;
+  text-align: center;
+  color: #fbfbfb;
+  box-sizing: border-box;
+}
+
+/* ------------tab------------------ */
+@media screen and (min-width: 768px) {
+  .wrap-advertisement {
+    padding: 80px 64px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    background-image: url(/img/advertisement/advertisement-tab.png);
+  }
+
+  @media (min-resolution: 192dpi) {
+    .wrap-advertisement {
+      background-image: url(/img/advertisement/advertisement-tab2x.png);
+    }
+  }
+
+  .advertisement-text {
+    font-size: 48px;
+    line-height: 44px;
+    line-height: 0.92;
+  }
+}
+
+/* ------------desktop-------------- */
+@media screen and (min-width: 1280px) {
+  @media (min-resolution: 192dpi) {
+    .wrap-advertisement {
+      background-image: url(/img/advertisement/advertisement-dt2x.png);
+    }
+  }
+
+  .wrap-advertisement {
+    background-image: url(/img/advertisement/advertisement-dt.png);
+    padding: 80px 80px 80px 83px;
+    display: flex;
+    flex-wrap: nowrap;
+
+    gap: 0;
+  }
+
+  .advertisement-text {
+    max-width: 690px;
+  }
+  .link-contact-us {
+    max-height: 48px;
+    margin-left: auto;
+  }
 }
