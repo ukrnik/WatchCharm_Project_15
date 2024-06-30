@@ -45,6 +45,15 @@
   transition: background-color 0.3s;
 }
 
+.about-us-button-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  line-height: 1.28571;
+  text-align: center;
+  color: #fbfbfb;
+}
+
 .view-catalog-button:hover {
   background-color: #1f3cd4;
 }
