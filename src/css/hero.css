@@ -1,3 +1,153 @@
 .hero {
-  background-color: rgb(4, 46, 82);
+  background-color: #fbfbfb;
+  font-family: 'Gilroy', sans-serif;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.hero-description {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hero-title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 0.95;
+  letter-spacing: -0.02em;
+  color: #0c0c0c;
+}
+
+.hero-title-span {
+  color: #3350e9;
+}
+
+.hero-description-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: rgba(12, 12, 12, 0.7);
+}
+
+.hero-nonsense {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.collage {
+  display: flex;
+}
+
+.collage-item {
+  border-radius: 50%;
+  outline: 2px solid #fbfbfb;
+  outline-offset: -2px;
+  margin-right: -12px;
+}
+
+.collage-item img {
+  border-radius: 50%;
+}
+
+.hero-nonsense-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #0c0c0c;
+}
+
+.hero-nonsense-link:hover,
+.hero-nonsense-link:focus {
+  color: #3350e9;
+}
+
+.hero-image {
+  border-radius: 30px;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    column-gap: 11px;
+    row-gap: 40px;
+  }
+  .hero-description {
+    max-width: 557px;
+  }
+
+  .hero-title {
+    font-size: 70px;
+    line-height: 0.86;
+  }
+
+  .hero-description-text {
+    max-width: 480px;
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
+  .hero-nonsense {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .collage-item {
+    margin-right: -16px;
+  }
+
+  .collage-item:last-child {
+    margin-right: 0;
+  }
+
+  .hero-nonsense-link {
+    font-size: 20px;
+    line-height: 1;
+  }
+
+  .hero-image {
+    border-radius: 50px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hero-container {
+    column-gap: 407px;
+    row-gap: 40px;
+  }
+  .hero-description {
+    max-width: 597px;
+  }
+
+  .hero-title {
+    font-size: 72px;
+    line-height: 0.875;
+  }
+
+  .hero-description-text {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
+  .collage-item {
+    margin-right: -17px;
+  }
+
+  .collage-item:last-child {
+    margin-right: 0;
+  }
 }
