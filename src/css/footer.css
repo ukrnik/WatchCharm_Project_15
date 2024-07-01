@@ -1,5 +1,5 @@
 .footer {
-  padding: 60px 0 20px;
+  padding: 60px 20px 20px;
 }
 
 .footer-container {
@@ -138,6 +138,12 @@
 .legalities-links {
   display: flex;
   gap: 20px;
+}
+
+@media screen and (max-width: 374px) {
+  .footer-title {
+    width: 100%;
+  }
 }
 
 /* ==================================TABLET=================================  */
