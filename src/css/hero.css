@@ -49,6 +49,13 @@
   outline: 2px solid #fbfbfb;
   outline-offset: -2px;
   margin-right: -12px;
+  transition: transform 0.3 ease;
+}
+
+.collage-item:focus,
+.collage-item:hover {
+  z-index: 22;
+  transform: scale(1.2);
 }
 
 .collage-item img {
