@@ -1,10 +1,20 @@
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: #fcfcfc;
+  transition: top 0.3s;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 20px;
-  border-bottom: 1px;
   box-shadow: 0 1px 1px #0000001a;
+}
+
+.header.show {
+  top: -90px;
 }
 
 .header-container {
@@ -64,13 +74,32 @@
   border-radius: 4px;
 }
 
-.mob-menu {
+.mob-menu-overlay {
+  background-color: transparent;
   position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mob-menu {
+  padding-top: 40px;
+  position: absolute;
   top: 0;
   right: 0;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   width: 200px;
   height: 100%;
@@ -78,12 +107,10 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  opacity: 0;
-  visibility: hidden;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.is-open {
+.mob-menu-overlay.is-open {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
@@ -102,6 +129,8 @@
   stroke: white;
 }
 
+/* ---------------------------------------------------------------------- */
+
 @media screen and (min-width: 768px) {
   .header-logo {
     font-size: 20px;
@@ -112,9 +141,9 @@
     width: 330px;
   }
 
-  .mob-menu-list {
+  /* .mob-menu-list {
     margin-top: 310px;
-  }
+  } */
 }
 
 @media screen and (min-width: 1280px) {
@@ -163,7 +192,6 @@
   flex-direction: column;
   align-items: center;
   gap: 24px;
-  margin-top: 240px;
   margin-bottom: 10px;
 }
 
@@ -181,9 +209,9 @@
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.mod-menu-social-media {
-  margin-bottom: 40px;
-}
+/* .mod-menu-social-media {
+  top: 40px;
+} */
 
 .mob-menu-item {
   position: relative;
