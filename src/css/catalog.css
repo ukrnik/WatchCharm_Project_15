@@ -1,16 +1,3 @@
-.section {
-  padding-top: 60px;
-}
-
-.section-title {
-  margin-bottom: 24px;
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 1;
-  letter-spacing: -0.02em;
-  color: #0c0c0c;
-}
-
 .catalog-list {
   display: flex;
   justify-content: space-between;
@@ -24,6 +11,10 @@
   border-radius: 30px;
   width: 100%;
   background: #f3f3f3;
+}
+
+.catalog-thumb {
+  margin-bottom: 28px;
 }
 
 .catalog-img {
@@ -70,15 +61,6 @@
 /* tablet  */
 
 @media screen and (min-width: 768px) {
-  .section {
-    padding-top: 80px;
-  }
-
-  .section-title {
-    font-size: 48px;
-    line-height: 0.91667;
-  }
-
   .catalog-list {
     row-gap: 32px;
     column-gap: 16px;
@@ -89,7 +71,15 @@
     max-width: 344px;
   }
 
+  .catalog-thumb {
+    margin-bottom: 20px;
+  }
+
   .watch-name {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 100%;
+    white-space: nowrap;
     font-size: 20px;
     line-height: 1;
   }
