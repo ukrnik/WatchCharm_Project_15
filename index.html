@@ -14,7 +14,7 @@
       referrerpolicy="no-referrer"
     />
     <script type="module" crossorigin src="/WatchCharm_Project_15/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/WatchCharm_Project_15/assets/index-e8bbb560.css">
+    <link rel="stylesheet" href="/WatchCharm_Project_15/assets/index-a463ecd5.css">
   </head>
   <body>
     <header class="header">
@@ -554,23 +554,32 @@
       <div class="forms">
         <p class="content">Please use the form below to contact us. Enter your name, email, phone, and message and we'll
           get back to you shortly.</p>
-        <label for="user-name"></label>
-        <input type="text" name="user-name" id="user-name" placeholder="Name" class="section-input" required>
-        <label for="user-email"></label>
-        <input type="email" name="user-email" id="user-email" placeholder="Email"
-          pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" class="section-input" required>
-        <label for="user-tel"></label>
-        <input type="tel" name="user-tel" id="user-tel" placeholder="+380" pattern="^\+\d{3}-\d{2}-\d{3}-\d{2}-\d{2}$"
-          class="section-input" required>
-        <label for="user-comment"></label>
-        <textarea name="user-comment" id="user-comment" placeholder="Comment" class="section-textarea"></textarea>
-        <button type="submit" class="send-btn">Send</button>
+
+        <form class="form-contact-us">
+          <label for="user-name" class="visually-hidden">User name</label>
+          <input 
+          type="text" 
+          name="user-name" 
+          id="user-name" 
+          placeholder="Name"
+           class="section-input" 
+           required>
+          <label for="user-email" class="visually-hidden">User email</label>
+          <input type="email" name="user-email" id="user-email" placeholder="Email"
+            pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" class="section-input" required>
+          <label for="user-tel" class="visually-hidden">User tel</label>
+          <input type="tel" name="user-tel" id="user-tel" placeholder="+380" pattern="^\+\d{3}-\d{2}-\d{3}-\d{2}-\d{2}$"
+            class="section-input" required>
+          <label for="user-comment" class="visually-hidden">User comment</label>
+          <textarea name="user-comment" id="user-comment" placeholder="Comment" class="section-textarea"></textarea>
+          <button type="submit" class="send-btn">Send</button>
+        </form>
       </div>
       <div class="section-picture">
         <picture>
-          <source srcset="/WatchCharm_Project_15/assets/contact_us-dt-faf47941.jpg 1x, /WatchCharm_Project_15/assets/contact_us-dt2x-3f5975ed.jpg " 2x media="(min-width: 1280px)">
-          <source srcset="/WatchCharm_Project_15/assets/contact_us-tab-fdf9a8e0.jpg 1x, /WatchCharm_Project_15/assets/contact_us-tab2x-1b4e7498.jpg " 2x media="(min-width: 768px)">
-          <source srcset="/WatchCharm_Project_15/assets/contact_us-mob-3498b795.jpg 1x, /WatchCharm_Project_15/assets/contact_us-mob2x-21ae0b08.jpg " 2x media="(max-width: 767px)">
+          <source srcset="/WatchCharm_Project_15/assets/contact_us-dt-faf47941.jpg 1x, /WatchCharm_Project_15/assets/contact_us-dt2x-3f5975ed.jpg 2x"  media="(min-width: 1280px)">
+          <source srcset="/WatchCharm_Project_15/assets/contact_us-tab-fdf9a8e0.jpg 1x, /WatchCharm_Project_15/assets/contact_us-tab2x-1b4e7498.jpg 2x"  media="(min-width: 768px)">
+          <source srcset="/WatchCharm_Project_15/assets/contact_us-mob-3498b795.jpg 1x, /WatchCharm_Project_15/assets/contact_us-mob2x-21ae0b08.jpg 2x" media="(max-width: 767px)">
           <img src="/WatchCharm_Project_15/assets/contact_us-dt-faf47941.jpg" alt="Rectangle" width="530" height="556" class="section-img" />
         </picture>
       </div>
