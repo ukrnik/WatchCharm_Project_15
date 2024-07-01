@@ -1,4 +1,4 @@
-.wrap-advertisement {
+.wrap-publicity {
   width: 100%;
   background: #0c0c0c;
   background-image: url(/img/advertisement/advertisement-mob.png);
@@ -13,12 +13,12 @@
 }
 
 @media (min-resolution: 192dpi) {
-  .wrap-advertisement {
+  .wrap-publicity {
     background-image: url(/img/advertisement/advertisement-mob2x.png);
   }
 }
 
-.advertisement-text {
+.publicity-text {
   font-weight: 600;
   font-size: 32px;
   line-height: 32px;
@@ -27,7 +27,7 @@
   color: #fbfbfb;
 }
 
-.decoration-text-advertisiment {
+.decoration-text-publicity {
   color: rgba(251, 251, 251, 0.5);
 }
 
@@ -42,11 +42,19 @@
   text-align: center;
   color: #fbfbfb;
   box-sizing: border-box;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link-contact-us:hover,
+.link-contact-us:focus {
+  color: #0c0c0c;
+  background-color: #fbfbfb;
 }
 
 /* ------------tab------------------ */
 @media screen and (min-width: 768px) {
-  .wrap-advertisement {
+  .wrap-publicity {
     padding: 80px 64px;
     display: flex;
     flex-wrap: wrap;
@@ -55,12 +63,12 @@
   }
 
   @media (min-resolution: 192dpi) {
-    .wrap-advertisement {
+    .wrap-publicity {
       background-image: url(/img/advertisement/advertisement-tab2x.png);
     }
   }
 
-  .advertisement-text {
+  .publicity-text {
     font-size: 48px;
     line-height: 44px;
     line-height: 0.92;
@@ -70,12 +78,12 @@
 /* ------------desktop-------------- */
 @media screen and (min-width: 1280px) {
   @media (min-resolution: 192dpi) {
-    .wrap-advertisement {
+    .wrap-publicity {
       background-image: url(/img/advertisement/advertisement-dt2x.png);
     }
   }
 
-  .wrap-advertisement {
+  .wrap-publicity {
     background-image: url(/img/advertisement/advertisement-dt.png);
     padding: 80px 80px 80px 83px;
     display: flex;
@@ -84,7 +92,7 @@
     gap: 0;
   }
 
-  .advertisement-text {
+  .publicity-text {
     max-width: 690px;
   }
   .link-contact-us {

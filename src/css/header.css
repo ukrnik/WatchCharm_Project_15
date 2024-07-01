@@ -9,7 +9,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 20px;
+  padding: 20px 0;
   box-shadow: 0 1px 1px #0000001a;
 }
 
@@ -39,13 +39,6 @@
   display: none;
 }
 
-.header-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-}
-
 .icon-open-btn {
   padding: 0;
   line-height: 0;
@@ -56,22 +49,6 @@
 
 .icon-btn-svg {
   stroke: #0c0c0c;
-}
-
-.header-menu-item {
-  position: relative;
-}
-
-.header-menu-item:focus::after,
-.header-menu-item:hover::after {
-  content: '';
-  width: 8px;
-  position: absolute;
-  left: calc(50% - 4px);
-  bottom: -15px;
-  height: 8px;
-  background-color: #3350e9;
-  border-radius: 4px;
 }
 
 .mob-menu-overlay {
@@ -93,7 +70,7 @@
 }
 
 .mob-menu {
-  padding-top: 40px;
+  padding-top: 10px;
   position: absolute;
   top: 0;
   right: 0;
@@ -110,6 +87,13 @@
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+@media (min-resolution: 192dpi) {
+  .mob-menu {
+    background-image: url(/img/modal-back-mob-2x.jpg);
+  }
+}
+
 .mob-menu-overlay.is-open {
   opacity: 1;
   visibility: visible;
@@ -141,15 +125,41 @@
     width: 330px;
   }
 
-  /* .mob-menu-list {
-    margin-top: 310px;
-  } */
+  @media (min-resolution: 192dpi) {
+    .mob-menu {
+      background-image: url(/img/modal-back-tab-2x.jpg);
+    }
+  }
 }
 
 @media screen and (min-width: 1280px) {
+  .header-nav {
+    display: flex;
+    gap: 203px;
+    align-items: center;
+    width: 100%;
+  }
+
   .header-menu-list {
     display: flex;
     gap: 40px;
+  }
+
+  .header-menu-item {
+    position: relative;
+    transition: background-color 9050ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .header-menu-item:focus::after,
+  .header-menu-item:hover::after {
+    content: '';
+    width: 8px;
+    position: absolute;
+    left: calc(50% - 4px);
+    bottom: -15px;
+    height: 8px;
+    background-color: #3350e9;
+    border-radius: 4px;
   }
 
   .icon-open-btn {
@@ -157,6 +167,7 @@
   }
 
   .header-menu-link {
+    padding: 20px 0;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.28;
@@ -185,6 +196,7 @@
   justify-content: center;
   align-items: center;
   text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mob-menu-list {
@@ -201,17 +213,13 @@
   line-height: 1.28571;
   text-align: center;
   color: #fbfbfb;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-icon-item:focus > .header-icon,
 .header-icon-item:hover .header-icon {
   fill: #3350e9;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-/* .mod-menu-social-media {
-  top: 40px;
-} */
 
 .mob-menu-item {
   position: relative;
