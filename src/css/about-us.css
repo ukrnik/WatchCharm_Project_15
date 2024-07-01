@@ -29,7 +29,9 @@
 }
 
 .view-catalog-button {
-  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 16px;
   width: 160px;
   height: 48px;
@@ -42,15 +44,6 @@
   color: #fbfbfb;
   cursor: pointer;
   transition: background-color 0.3s;
-}
-
-.about-us-button-text {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 18px;
-  line-height: 1.28571;
-  text-align: center;
-  color: #fbfbfb;
 }
 
 .view-catalog-button:hover {
