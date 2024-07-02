@@ -1,3 +1,7 @@
+.hero {
+  margin-top: 60px;
+}
+
 .hero-container {
   display: flex;
   flex-direction: column;
@@ -45,6 +49,13 @@
   outline: 2px solid #fbfbfb;
   outline-offset: -2px;
   margin-right: -12px;
+  transition: transform 0.3 ease;
+}
+
+.collage-item:focus,
+.collage-item:hover {
+  z-index: 22;
+  transform: scale(1.2);
 }
 
 .collage-item img {
@@ -72,6 +83,10 @@
 }
 
 @media screen and (min-width: 768px) {
+  .hero {
+    margin-top: 80px;
+  }
+
   .hero-container {
     flex-direction: row;
     flex-wrap: wrap;

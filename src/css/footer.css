@@ -1,11 +1,15 @@
 .footer {
+  padding: 60px 20px 20px;
+}
+
+.footer-container {
   background: #0c0c0c;
   border-radius: 30px;
-  margin: 60px 20px 20px;
+  padding: 40px 40px 28px;
+  max-width: 335px;
 }
 
 .footer-links-wrapper {
-  padding-top: 40px;
   display: flex;
   flex-direction: column;
   margin-bottom: 92px;
@@ -87,7 +91,7 @@
 
 .footer-nav-link {
   display: block;
-  padding: 2px 0;
+  padding: 2px 0 10px;
   text-decoration: none;
   font-weight: 500;
   font-size: 12px;
@@ -134,14 +138,25 @@
 .legalities-links {
   display: flex;
   gap: 20px;
-  padding-bottom: 28px;
+}
+
+@media screen and (max-width: 374px) {
+  .footer-title {
+    width: 100%;
+  }
 }
 
 /* ==================================TABLET=================================  */
 
 @media screen and (min-width: 768px) {
   .footer {
-    margin: 80px 32px 32px;
+    padding: 80px 0 32px;
+  }
+
+  .footer-container {
+    background: #0c0c0c;
+    border-radius: 30px;
+    max-width: 704px;
   }
 
   .footer-links-wrapper {
@@ -152,6 +167,10 @@
     justify-content: space-between;
   }
 
+  .footer-social-media-list {
+    margin: 0;
+  }
+
   .footer-title {
     margin: 0 auto;
     min-width: 524px;
@@ -160,7 +179,7 @@
   }
 
   .btn-contact {
-    margin-bottom: 0;
+    margin: 0;
     width: 160px;
     height: 48px;
     font-size: 14px;
@@ -191,6 +210,7 @@
 
   .rights,
   .legalities {
+    margin-bottom: 0;
     font-size: 14px;
     line-height: 1.28571;
   }
@@ -204,7 +224,13 @@
 
 @media screen and (min-width: 1280px) {
   .footer {
-    margin-top: 100px;
+    padding-top: 100px;
+  }
+
+  .footer-container {
+    background: #0c0c0c;
+    border-radius: 30px;
+    max-width: 1216px;
   }
 
   .footer-links-wrapper {
