@@ -49,7 +49,8 @@
   outline: 2px solid #fbfbfb;
   outline-offset: -2px;
   margin-right: -12px;
-  transition: transform 0.3 ease;
+  cursor: pointer;
+  transition: transform 350ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .collage-item:focus,
@@ -70,6 +71,7 @@
   text-decoration: underline;
   text-decoration-skip-ink: none;
   color: #0c0c0c;
+  transition: color 350ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-nonsense-link:hover,
@@ -90,7 +92,6 @@
   .hero-container {
     flex-direction: row;
     flex-wrap: wrap;
-    /* justify-content: space-between; */
     column-gap: 11px;
     row-gap: 40px;
   }

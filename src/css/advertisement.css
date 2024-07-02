@@ -42,8 +42,8 @@
   text-align: center;
   color: #fbfbfb;
   box-sizing: border-box;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 350ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 350ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-contact-us:hover,
