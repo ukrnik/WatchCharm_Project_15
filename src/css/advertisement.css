@@ -74,3 +74,30 @@
     line-height: 0.92;
   }
 }
+
+/* ------------desktop-------------- */
+@media screen and (min-width: 1280px) {
+  @media (min-resolution: 192dpi) {
+    .wrap-publicity {
+      background-image: url(/img/advertisement/advertisement-dt2x.png);
+    }
+  }
+
+  .wrap-publicity {
+    background-image: url(/img/advertisement/advertisement-dt.png);
+    padding: 80px 80px 80px 83px;
+    display: flex;
+    flex-wrap: nowrap;
+
+    gap: 0;
+  }
+
+  .publicity-text {
+    max-width: 690px;
+  }
+
+  .link-contact-us {
+    max-height: 48px;
+    margin-left: auto;
+  }
+}
