@@ -4,7 +4,7 @@
     <div class="sale-wrap">
       <div class="sale-box-image">
         <ul class="sale-list">
-          <li class="sale-item">
+          <li class="sale-item" data-large="1">
             <picture>
               <source media="(min-width: 1280px)" srcset="
                   img/sale-small-1-dt.png   1x,
@@ -21,7 +21,7 @@
               <img class="image-sale-item" src="img/sale-small-1-dt.png" alt="watch" width="96" height="100" />
             </picture>
           </li>
-          <li class="sale-item">
+          <li class="sale-item" data-large="2">
             <picture>
               <source media="(min-width: 1280px)" srcset="
                   img/sale-small-2-dt.png   1x,
@@ -35,7 +35,7 @@
               <img class="image-sale-item" src="img/sale-small-2-dt.png" alt="watch" width="96" height="100" />
             </picture>
           </li>
-          <li class="sale-item">
+          <li class="sale-item" data-large="3">
             <picture>
               <source media="(min-width: 1280px)" srcset="
                   img/sale-small-3-dt.png   1x,
@@ -49,7 +49,7 @@
               <img class="image-sale-item" src="img/sale-small-3-dt.png" alt="watch" width="96" height="100" />
             </picture>
           </li>
-          <li class="sale-item">
+          <li class="sale-item" data-large="4">
             <picture>
               <source media="(min-width: 1280px)" srcset="
                   img/sale-small-4-dt.png   1x,
@@ -67,13 +67,91 @@
             </picture>
           </li>
         </ul>
+
+        <!-- ---------------------------------------------------------------------------------------------------------  -->
         <div class="sale-image-wrap">
-          <picture>
-            <source media="(min-width: 1280px)" srcset="img/sale-big-dt.png 1x, img/sale-big-dt2x.png 2x" />
-            <source media="(min-width: 768px)" srcset="img/sale-big-tab.png 1x, img/sale-big-tab2x.png 2x" />
-            <source media="(max-width: 767px)" srcset="img/sale-big-mob.png 1x, img/sale-big-mob2x.png 2x" />
-            <img class="image-sale" src="img/sale-big-dt.png" alt="watch" width="96" height="100" />
-          </picture>
+          <ul class="large-slide">
+            <li class="sale-item-big big-img" id="large-1">
+              <picture>
+                <source media="(min-width: 1280px)" srcset="
+                img/slider/exhibition-watch-front-1-dt.png  1x,
+                img/slider/exhibition-watch-front-1-dt-2x.png 2x
+                  " />
+                <source media="(min-width: 768px)" srcset="
+                img/slider/exhibition-watch-front-1-tab.png   1x,
+                img/slider/exhibition-watch-front-1-tab-2x.png 2x
+                  " />
+                <source media="(max-width: 767px)" srcset="
+                img/slider/exhibition-watch-front-1-mob.png  1x,
+                img/slider/exhibition-watch-front-1-mob-2x.png 2x
+                  " />
+                <img class="image-sale" src="img/slider/exhibition-watch-front-1-dt.jpg" alt="watch" width="96"
+                  height="100" />
+              </picture>
+            </li>
+            <li class="sale-item-big big-img" id="large-2">
+              <picture>
+                <source media="(min-width: 1280px)" srcset="
+                img/slider/exhibition-watch-front-2-dt.png  1x,
+                img/slider/exhibition-watch-front-2-dt-2x.png 2x
+                  " />
+                <source media="(min-width: 768px)" srcset="
+                img/slider/exhibition-watch-front-2-tab.png   1x,
+                img/slider/exhibition-watch-front-2-tab-2x.png 2x
+                  " />
+                <source media="(max-width: 767px)" srcset="
+                img/slider/exhibition-watch-front-2-mob.png  1x,
+                img/slider/exhibition-watch-front-2-mob-2x.png 2x
+                  " />
+                <img class="image-sale" src="img/slider/exhibition-watch-front-2-dt.jpg" alt="watch" width="96"
+                  height="100" />
+              </picture>
+            </li>
+            <li class="sale-item-big big-img" id="large-3">
+              <picture>
+                <source media="(min-width: 1280px)" srcset="
+                img/slider/exhibition-watch-side-dt.png  1x,
+                img/slider/exhibition-watch-side-dt-2x.png 2x
+                  " />
+                <source media="(min-width: 768px)" srcset="
+                img/slider/exhibition-watch-side-tab.png   1x,
+                img/slider/exhibition-watch-side-tab-2x.png 2x
+                  " />
+                <source media="(max-width: 767px)" srcset="
+                img/slider/exhibition-watch-side-mob.png  1x,
+                img/slider/exhibition-watch-side-mob-2x.png 2x
+                  " />
+                <img class="image-sale" src="img/slider/exhibition-watch-side-dt.jpg" alt="watch" width="96"
+                  height="100" />
+              </picture>
+            </li>
+            <li class="sale-item-big big-img" id="large-4">
+              <picture>
+                <source media="(min-width: 1280px)" srcset="
+                img/slider/exhibition-watch-back-dt.png  1x,
+                img/slider/exhibition-watch-back-dt-2x.png 2x
+                  " />
+                <source media="(min-width: 768px)" srcset="
+                img/slider/exhibition-watch-back-tab.png   1x,
+                img/slider/exhibition-watch-back-tab-2x.png 2x
+                  " />
+                <source media="(max-width: 767px)" srcset="
+                img/slider/exhibition-watch-back-mob.png  1x,
+                img/slider/exhibition-watch-back-mob-2x.png 2x
+                  " />
+                <img class="image-sale" src="img/slider/exhibition-watch-back-dt.png" alt="watch" width="96"
+                  height="100" />
+              </picture>
+            </li>
+            <li class="sale-item-big active first" id="large-5">
+              <picture>
+                <source media="(min-width: 1280px)" srcset="img/sale-big-dt.png 1x, img/sale-big-dt2x.png 2x" />
+                <source media="(min-width: 768px)" srcset="img/sale-big-tab.png 1x, img/sale-big-tab2x.png 2x" />
+                <source media="(max-width: 767px)" srcset="img/sale-big-mob.png 1x, img/sale-big-mob2x.png 2x" />
+                <img class="image-sale" src="img/sale-big-dt.png" alt="watch" width="96" height="100" />
+              </picture>
+            </li>
+          </ul>
         </div>
       </div>
       <div class="discription-sale">
